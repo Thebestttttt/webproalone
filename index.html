@@ -1,0 +1,353 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project Menu</title>
+    <style>
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            width: 100%;
+            padding: 1% 0;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(34, 34, 34, 0.9));
+            color: white;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+        nav:hover {
+            background: linear-gradient(90deg, rgba(34, 34, 34, 0.9), rgba(0, 0, 0, 0.9));
+        }
+        nav a {
+            color: white;
+            margin: 0 1.5%;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 100%;
+            padding: 0.5% 2%;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        nav a:not(:last-child)::after {
+            content: "|";
+            position: absolute;
+            right: -20px;
+            color: white;
+            font-weight: normal;
+        }
+        nav a:hover {
+            font-size: 120%;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .Aboutus {
+            width: 100%;
+            /* min-height: 100%; */
+            height: auto;
+            background-image: url('./img/Sathorn-Baan-Somtum-1.jpg.webp'); /* ใส่ที่อยู่ของรูปภาพ */
+            background-position: center; 
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+        .backgrimg{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .about-text {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .about-text h1 {
+            font-size: 350%;
+        }
+        .mainabout{
+            display: flex;
+            justify-content: start;
+            margin-left: 10%;
+            align-items: center;
+            width: 46%;
+            height: 100%;
+            margin-top: 50px;
+            
+        }
+        .menubutton{
+            font-size: 20px;
+            background-color: #FFD9C5;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            margin-left: 2%;
+            margin-right: 2%;
+            margin-bottom: 5%;
+        }
+        .menubutton:hover {
+            color: #000000;
+            font-size: 200%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .pp1{
+            font-size: 120%;
+            margin-top: -20px;
+            margin-right: 2%;
+            margin-left: 2%;
+            text-align: start;
+            text-indent: 15%;
+            
+        }
+        .Menu {
+            width: 100%;
+            min-height: 100%;
+            height: auto;
+            background-color: #FFD8BC;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .Menu h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .menu-slider {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            justify-items: center;
+            gap: 20px; 
+        }
+
+        .menu-item {
+            width: 90%;
+            height: 80%;
+            background-color: #FFFFFF;
+            text-align: center;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+        .menu-slider:hover .menu-item {
+            opacity: 0.5;
+            filter: blur(2px);
+            transition: all 0.3s ease;
+        }
+
+        .menu-item:hover {
+            opacity: 1 !important;
+            filter: blur(0) !important;
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+
+        .menu-item img {
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .menu-item p {
+            font-size: 120%;
+            margin-top: 10px;
+        }
+
+        .menu-button-container {
+            /* background-color: #7C5127; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -5%;
+            
+        }
+
+        .menuall {
+            font-size: 1rem;
+            padding: 10px 20px;
+            background-color: #FFD9C5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+            background-color: #7C5127;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .menuall:hover {
+            background-color: #ffb080;
+            font-size: 120%;
+            
+        }
+        .contact {
+            height: 100%;
+            padding: 40px 20px;
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+
+        .contact h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1rem;
+            margin: 5px 0;
+            color: #000;
+        }
+        .contact iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            border: 0;
+            margin-top: 20px;
+        }
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .Reference {
+            background-color: #7C5127;
+            height: auto;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .Reference h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fffcfc;
+        }
+
+        .hr {
+            width: 80%;
+            margin: 0 auto;
+            display: block;
+            padding: 10px 0;
+            border-top: 2px solid #fff;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .Reference a {
+            display: block;
+            font-size: 1.2rem;
+            color: #ffffff;
+            text-decoration: none;
+            margin: 10px 0;
+            transition: color 0.3s;
+        }
+        .Reference a:hover {
+            color: #ffa66b;
+            
+        }
+        @media screen and (max-width: 700px){
+            .Aboutus{
+                width: 100%;
+            }
+            .Menu{
+                width: 100%;
+            }
+            .menu-slider{
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about-me">About us</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+        <a href="#reference">Reference</a>
+    </nav>
+    <div id ="about-me" class="Aboutus">
+        <div class="mainabout">
+            <div class="about-text">
+                <h1>Esan Ban Hao</h1>
+                <p class="pp1">เป็นร้านอาหารที่ได้รับการออกแบบเพื่อสะท้อนความเป็นเอกลักษณ์
+                    ของวัฒนธรรมอีสานอย่างแท้จริง โดยนำเอาอาหารพื้นบ้านขึ้นชื่อจากทุกจังหวัด
+                    ในภาคอีสานมารวบรวมไว้ในที่เดียว บรรยากาศของร้านยังถูกออกแบบให้สะท้อน
+                    ถึงวัฒนธรรมอีสาน ไม่ว่าจะเป็นการตกแต่งด้วยเครื่องจักสาน ผ้าขาวม้า   
+                    และดนตรีพื้นบ้าน นอกจากนี้ทางร้านยังมีการเล่าเรื่องราวของอาหารแต่ละจาน
+                    เพื่อให้ลูกค้าได้เรียนรู้เกี่ยวกับวัฒนธรรมและภูมิปัญญาท้องถิ่นของชาวอีสาน
+                    ไปพร้อมกับการลิ้มรสอาหาร</p>
+                    <button class="menubutton" onclick="goToMenu()">Menu</button>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="Menu">
+        <h2>Menu Recommend</h2>
+        <div class="menu-slider">
+            <div class="menu-item" onclick="goToMenuDetail('menu1')">
+                <img src="./img/1.jpeg" alt="Menu 1">
+                <p>อังแกบบอบ (สุรินทร์)</p>
+            </div>
+            <div class="menu-item" onclick="goToMenuDetail('menu2')">
+                <img src="./img/2.jpeg" alt="Menu 2">
+                <p>ขนมตดหมา (บุรีรัมย์)</p>
+            </div>
+            <div class="menu-item"  onclick="goToMenuDetail('menu3')">
+                <img src="./img/3.jpeg" alt="Menu 3">
+                <p>ส้าปลาน้ำโขง (เลย)</p>
+            </div>
+        </div>
+        <div class="menu-button-container">
+            <button class="menuall" onclick="goToNewMenuall()">เมนูเพิ่มเติม</button>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <h3>ติดต่อเรา</h3>
+        <p>📞0800000000</p>
+        <p>📧esmd@____.com</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.547834356989!2d100.7495452153747!3d13.698712890361897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f77c8b8c0b1%3A0x7d86eb8cd79810a!2zMSBDaGFsb25nIEtydW5nIDEsIExhdCBLcmFiYW5nLCBCYW5na29rIDEwNTIw!5e0!3m2!1sen!2sth!4v1685312187471!5m2!1sen!2sth" allowfullscreen="" loading="lazy"></iframe>
+
+    </div>
+    </div>
+    <div class="Reference" id="reference">
+        <h3>Reference</h3>
+        <div class="hr">
+            <a href="https://www.sanook.com/travel/1442375/">https://www.sanook.com/travel/1442375/</a>
+            <br>
+            <a href="https://www.kasettambon.com/tag/%e0%b8%ad%e0%b8%b2%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%9b%e0%b8%a3%e0%b8%b0%e0%b8%88%e0%b8%b3%e0%b8%88%e0%b8%b1%e0%b8%87%e0%b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94/">https://www.kasettambon.com/tag/%e0%b8%ad%e0%b8%b2%e0%b8%ab%e0%b8%b2%e0%b8%a3%e0%b8%9<br>%e0%b8%a3%e0%b8%b0%e0%b8%88%e0%b8%b3%e0%b8%88%e0%b8%b1%e0%b8%87%e0%<br>b8%ab%e0%b8%a7%e0%b8%b1%e0%b8%94/</a>
+        </div>  
+    <script>
+        function goToMenu() {
+            document.getElementById("menu").scrollIntoView({ behavior: "smooth" });
+        }
+        function goToNewMenuall(){
+            window.location.href = "menu.html";
+        }
+        function goToMenuDetail(menu1) {
+            window.location.href = menu1+'-detail.html';
+        }
+        function goToMenuDetail(menu2) {
+            window.location.href = menu2+'-detail.html';
+        }
+        function goToMenuDetail(menu3) {
+            window.location.href = menu3+'-detail.html';
+        }
+    </script>
+</body>
+</html>

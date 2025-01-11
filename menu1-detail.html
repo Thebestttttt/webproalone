@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu1</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFE4D9;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-button, .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7C5127;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .home-button:hover, .back-button:hover {
+            background-color: #9A663A;
+            transform: scale(1.05);
+        }
+
+        .main {
+            width: 80%;
+            height: auto;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-main img {
+            width: 250px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #F8F8F8;
+            border-radius: 8px;
+            border: 1px solid #CCC;
+            margin: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            line-height: 1.6;
+            height: auto;
+        }
+
+        .pp1 {
+            text-indent: 10%;
+            margin-bottom: 15px;
+        }
+        .pp2, .pp3 {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="back-button" onclick="back()">Back</button>
+        <button class="home-button" onclick="home()">Home</button>
+    </div>
+    <div class="main">
+        <div class="image-main">
+            <img src="./img/1.jpeg">
+        </div>
+        <div class="content">
+            <h1><strong>อังแกบบอบ (สุรินทร์)</strong></h1>
+            <p class="pp1">
+                <strong>อังแกบบอบ</strong> หรือ <strong>ก็องแกบบอบ</strong> (เขมร: កង្កែបបោប, กงแกบโบบ) บ้างเรียก กบยัดไส้ หรือ กบยัดอั่ว    
+                เป็นอาหารที่ทำจากกบย่างยัดไส้ด้วยสมุนไพร นิยมรับประทานในช่วงวันสารทเขมร หรือที่เรียกว่าแซนโฎนตา โดยเป็นอาหารพื้นบ้านในภาคตะวันออกเฉียงเหนือตอนล่างหรืออีสานใต้ของประเทศไทยและยังพบในสำรับอาหารชาวเขมรในประเทศกัมพูชา เรียก ก็องแกบบก โดยชื่ออังแกบบอบเป็นภาษาเขมรถิ่นไทย แปลว่า "กบยัดไส้"
+            </p>
+            <p class="pp2">
+                <strong>ส่วนผสม : </strong>กบนา, กระเทียม, ข่า, ตะไคร้, ใบมะกรูด, พริก, หอมแดง, พริกไทย, ใบกะเพรา 
+            </p>
+            <p class="pp3">
+                <strong>วิธีทำ : </strong>โดยจะแบ่งกบเป็นสองส่วน ส่วนหนึ่งจับไปตัดหัว ขา ควักเครื่องในออก แล้วล้างให้สะอาด ส่วนกบอีกส่วนหนึ่งจะนำมาโรยเกลือและสับให้ละเอียดเพื่อทำเนื้อส่วนนี้มายัดไส้ (บางแห่งอาจผสมเนื้อไก่ลงไปด้วยเล็กน้อย) จากนั้นโขลกสมุนไพรทั้งหมดให้ละเอียดแล้วมาผสมคลุกเคล้าเข้ากับเนื้อกบสับเพื่อดับคาว เมื่อเข้ากันดีแล้วก็จะทำการยัดไปในช่องท้องของกบ แล้วนำไปย่างให้สุก เมื่อสุกอาจทากะทิที่ผสมเครื่องปรุงรสเพื่อทำให้กลิ่นหอมขึ้ และเมื่อย่างไม่ควรใช้ไฟแรง เพราะอาจทำให้ท้องกบแตก ดูไม่น่ารับประทาน ส่วน ก็องแกบบก ของประเทศกัมพูชา จะมีกรรมวิธีต่างไปบ้าง คือจะลอกหนังกบออก จากนั้นจะนำเนื้อกบมาสับและผสมกับเครื่องปรุงหลายชนิด ก่อนยัดใส่ในหนังตามเดิม แต่ส่วนผสมนั้นจะไม่ใส่พริกแบบอีสานใต้ของไทย หากแต่ใส่ถั่วลิสงลงไปแทน ก่อนนำไปหนีบไม้ย่างให้สุก
+            </p>
+        </div>
+    </div>
+    <script>
+        function back() {
+            window.location.href = 'menu.html';
+        }
+
+        function home() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

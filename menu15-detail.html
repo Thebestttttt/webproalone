@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu15</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFE4D9;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-button, .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7C5127;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .home-button:hover, .back-button:hover {
+            background-color: #9A663A;
+            transform: scale(1.05);
+        }
+
+        .main {
+            width: 80%;
+            height: auto;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-main img {
+            width: 250px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #F8F8F8;
+            border-radius: 8px;
+            border: 1px solid #CCC;
+            margin: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            line-height: 1.6;
+            height: auto;
+        }
+
+        .pp1 {
+            text-indent: 10%;
+            margin-bottom: 15px;
+        }
+        .pp2, .pp3 {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="back-button" onclick="back()">Back</button>
+        <button class="home-button" onclick="home()">Home</button>
+    </div>
+    <div class="main">
+        <div class="image-main">
+            <img src="./img/15.jpeg">
+        </div>
+        <div class="content">
+            <h1><strong>แจ่วฮ้อนท่าขอนยาง (มหาสารคาม)</strong></h1>
+            <p class="pp1">
+                <strong>แจ่วฮ้อนท่าขอนยาง</strong> ได้รับคัดเลือกให้เป็นอาหารประจำจังหวัดมหาสารคาม หรืออาหารประจำถิ่น ตามการดำเนินการจัดกิจกรรม “1 จังหวัด 1 เมนู เชิดชูอาหารถิ่น” ภายใต้โครงการการส่งเสริม และพัฒนายกระดับอาหารถิ่น สู่มรดกทางวัฒนธรรมและอัตลักษณ์ความเป็นไทย (Thailand Best Local Food) “รสชาติ…ที่หายไป The Lost Taste” ประจำปีงบประมาณ พ.ศ. 2566 ตามประกาศของกรมส่งเสริมวัฒนธรรม เมื่อวันที่ 29 สิงหาคม 2566
+                แจ่วฮ้อนท่าขอนยาง เป็นเมนูเด็ดของจังหวัดมหาสารคาม รสชาติเผ็ดร้อน ด้วยเครื่องสมุนไพรต่างๆ ที่ใช้เป็นส่วนผสม ไม่ว่าจะเป็น ข่า ตะไคร้ พริก โหระพา และผักต่างๆ ซึ่งช่วยบรรเทาอาการหวัด คัดจมูก และระบบขับถ่ายได้ดี ทานกับ เนื้อสัตว์ต่างๆ ที่นิยมคือ เนื้อวัวและเนื้อหมู ผักที่นิยมคือ ผักกาดขาว กะหล่ำปลี ผักบุ้ง เป็นต้น
+            </p>
+            <p class="pp2">
+                <strong>ส่วนผสม : </strong>ส่วนผสมน้ำซุปแจ่วฮ้อน: น้ำสะอาด 3-4 ลิตร, กระดูกซุป (หมู, ไก่ หรือ วัว) 500 กรัม, ข่า, ตะไคร้, ผิวมะกรูด หรือ ใบมะกรูด, เกลือ 1 ช้อนโต๊ะ, เครื่องแกงแจ่วฮ้อนที่ปั่นแล้ว 4 ทัพพี
+
+                เครื่องแกงแจ่วฮ้อน: ข่า 100 กรัม (คั่วหรือย่างไฟให้หอม), ตะไคร้ซอย 100 กรัม (คั่วหรือย่างไฟให้หอม), ใบมะกรูด 20 กรัม (คั่วหรือย่างไฟให้หอม), หอมแดง 100 กรัม (คั่วหรือย่างไฟให้หอม), กระเทียม 50 กรัม (คั่วหรือย่างไฟให้หอม), พริกสด 10 เม็ด (คั่วหรือย่างไฟให้หอม), ใบโหระพา หรือ ผักชีฝรั่ง 20 กรัม, น้ำกระเทียมดอง 1/2 ถ้วยตวง, พริกเผา 1 ช้อนโต๊ะ, น้ำตาลปี๊บ 1/2 ช้อนโต๊ะ, เกลือ 1 ช้อนโต๊ะ, ข้าวคั่ว 2 ช้อนโต๊ะ, พริกป่น 3 ช้อนโต๊ะ
+                
+                น้ำจิ้มแจ่วฮ้อน: เครื่องแกงแจ่วฮ้อนที่ปั่นแล้ว, น้ำมะขามเปียก 10 ช้อนโต๊ะ, เกลือ 1 ช้อนโต๊ะ, น้ำปลา 10 ช้อนโต๊ะ
+            </p>
+            <p class="pp3">
+                <strong>วิธีทำ : </strong>ใส่น้ำลงไปในหม้อ ตั้งไฟใช้ไฟกลางค่อนอ่อน ใส่กระดูกหมูลงไป ตามด้วยตะไคร้ ผิวมะกรูด ข่า เกลือ ปิดฝาเคี่ยวไปเรื่อยๆ 1-2 ชั่วโมง จากนั้นทำเครื่องแกงแจ่วฮ้อนโดยตั้งกระทะ ใส่ข่าหั่นแว่น ตะไคร้ซอย ใบมะกรูดฉีก หอมแดง กระเทียม พริกสด ใส่น้ำลงไปเล็กน้อย นำไปคั่วไฟกลางค่อนอ่อน คั่วไปเรื่อยๆ จนสุกหอมดี จากนั้นนำเครื่องแกงที่คั่วแล้วใส่โถปั่น ใส่เครื่องปรุงในส่วนผสมเครื่องแกงแจ่วฮ้อน พริกเผา น้ำกระเทียมดอง น้ำตาลปี๊บ เกลือ ข้าวคั่ว พริกป่น และใบโหระพา นำไปปั่นให้ละเอียด หลังจากนั้นนำเครื่องแกงที่ได้ใส่ลงไปในน้ำซุปครึ่งหนึ่ง หรือ 4 ทัพพี เคี่ยวต่อไปจนครบ 4-5 ชั่วโมง เป็นอันเสร็จ
+            </p>
+        </div>
+    </div>
+    <script>
+        function back() {
+            window.location.href = 'menu.html';
+        }
+
+        function home() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

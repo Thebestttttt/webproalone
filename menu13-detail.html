@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu13</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFE4D9;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-button, .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7C5127;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .home-button:hover, .back-button:hover {
+            background-color: #9A663A;
+            transform: scale(1.05);
+        }
+
+        .main {
+            width: 80%;
+            height: auto;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-main img {
+            width: 250px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #F8F8F8;
+            border-radius: 8px;
+            border: 1px solid #CCC;
+            margin: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            line-height: 1.6;
+            height: auto;
+        }
+
+        .pp1 {
+            text-indent: 10%;
+            margin-bottom: 15px;
+        }
+        .pp2, .pp3 {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="back-button" onclick="back()">Back</button>
+        <button class="home-button" onclick="home()">Home</button>
+    </div>
+    <div class="main">
+        <div class="image-main">
+            <img src="./img/13.jpeg">
+        </div>
+        <div class="content">
+            <h1><strong>กบยัดไส้ (ยโสธร)</strong></h1>
+            <p class="pp1">
+                <strong>กบยัดไส้</strong> หรือ <strong>อั่วกบ</strong> เกิดจากภูมิปํญญาพื้นบ้าน ที่นำเอาวัตถุดิบที่หาได้ในท้องถิ่นมาทำเป็นเมนูอาหาร ชาวบ้านจะทำการใต้กบ จากนั้นจะนำกบมาทำเป็นเมนูประเภท ปิ้ง ย่าง อ๊อก แต่เนื้อกบมีเนื้อค่อนข้างน้อย จึงมีการนำเอาเครื่องสมุนไพรต่างๆมาผสมกับเนื้อกบ แล้วนำมายัดในตัวกบ เป็นกบยัดไส้ เพื่อให้ดูมีเนื้อมากขึ้นและมีคุณค่าทางโภชนาการสูง
+            </p>
+            <p class="pp2">
+                <strong>ส่วนผสม : </strong>เนื้อกบ, หอมแดง, ใบมะกรูด, พริกแห้ง, พริกแกง, ตะไคร้, ผงปรุงรส
+            </p>
+            <p class="pp3">
+                <strong>วิธีทำ : </strong>นำส่วนประกอบของกบ เช่น ขาและเนื้อ มาบดรวมกับหอมแดง, พริกแห้ง, พริกแกง, ใบมะกรูด และตะไคร้ให้ละเอียด จากนั้นคลุกเคล้าเครื่องปรุงรสต่างๆ เช่น ผงปรุงรส ให้เข้ากันดี
+                นำส่วนผสมที่คลุกเคล้าแล้วมายัดใส่ในตัวกบให้แน่น แล้วนำไปย่างบนไฟอ่อนจนสุกทั่วถึง
+                เสิร์ฟเมื่อสุก พร้อมรับประทาน
+            </p>
+        </div>
+    </div>
+    <script>
+        function back() {
+            window.location.href = 'menu.html';
+        }
+
+        function home() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

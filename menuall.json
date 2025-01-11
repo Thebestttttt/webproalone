@@ -1,0 +1,102 @@
+[
+    {
+        "menu": "อังแกบบอบ",
+        "province": "สุรินทร์",
+        "image": "./img/1.jpeg"
+    },
+    {
+        "menu": "ขนมตดหมา",
+        "province": "บุรีรัมย์",
+        "image": "./img/2.jpeg"
+    },
+    {
+        "menu": "ส้าปลาน้ำโขง",
+        "province": "เลย",
+        "image": "./img/3.jpeg"
+    },
+    {
+        "menu": "หลามปลาน้ำโขง",
+        "province": "หนองคาย",
+        "image": "./img/4.jpeg"
+    },
+    {
+        "menu": "หมกหม้อปลาน้ำโขง",
+        "province": "บึงกาฬ",
+        "image": "./img/5.jpeg"
+    },
+    {
+        "menu": "เมี่ยงตาสวด",
+        "province": "นครพนม",
+        "image": "./img/6.jpeg"
+    },
+    {
+        "menu": "แกงหวาย",
+        "province": "สกลนคร",
+        "image": "./img/7.jpeg"
+    },
+    {
+        "menu": "ตำเมี่ยงตะไคร้ ลำข่าสดใส่มดแดง",
+        "province": "มุกดาหาร",
+        "image": "./img/8.jpeg"
+    },
+    {
+        "menu": "ข้าวต้มมัดบัวแดง อำเภอเมืองอุดรธานี",
+        "province": "อุดรธานี",
+        "image": "./img/9.jpeg"
+    },
+    {
+        "menu": "ข้าวแดะงา",
+        "province": "กาฬสินธุ์",
+        "image": "./img/10.jpeg"
+    },
+    {
+        "menu": "ปลาแดกบองสมุนไพร",
+        "province": "ขอนแก่น",
+        "image": "./img/11.jpeg"
+    },
+    {
+        "menu": "อู๋พุงปลา",
+        "province": "อำนาจเจริญ",
+        "image": "./img/12.jpeg"
+    },
+    {
+        "menu": "อั่วกบ(กบยัดไส้)",
+        "province": "ยโสธร",
+        "image": "./img/13.jpeg"
+    },
+    {
+        "menu": "ข้าวปุ้นน้ำยาปลาหลด",
+        "province": "ร้อยเอ็ด",
+        "image": "./img/14.jpeg"
+    },
+    {
+        "menu": "แจ่วฮ้อนท่าขอนยาง",
+        "province": "มหาสารคาม",
+        "image": "./img/15.jpeg"
+    },
+    {
+        "menu": "คั่วเนื้อคั่วปลา",
+        "province": "ชัยภูมิ",
+        "image": "./img/16.jpeg"
+    },
+    {
+        "menu": "ผัดหมี่โคราช",
+        "province": "นครราชสีมา",
+        "image": "./img/17.jpeg"
+    },
+    {
+        "menu": "ละแวกะดาม",
+        "province": "ศรีสะเกษ",
+        "image": "./img/18.jpeg"
+    },
+    {
+        "menu": "ลาบหมาน้อย",
+        "province": "อุบลราชธานี",
+        "image": "./img/19.jpeg"
+    },
+    {
+        "menu": "เบาะโดง(น้ำพริกมะพร้าวโบราณ)",
+        "province": "สุรินทร์",
+        "image": "./img/20.jpeg"
+    }
+]

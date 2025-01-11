@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu11</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFE4D9;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-button, .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7C5127;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .home-button:hover, .back-button:hover {
+            background-color: #9A663A;
+            transform: scale(1.05);
+        }
+
+        .main {
+            width: 80%;
+            height: auto;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-main img {
+            width: 250px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #F8F8F8;
+            border-radius: 8px;
+            border: 1px solid #CCC;
+            margin: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            line-height: 1.6;
+            height: auto;
+        }
+
+        .pp1 {
+            text-indent: 10%;
+            margin-bottom: 15px;
+        }
+        .pp2, .pp3 {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="back-button" onclick="back()">Back</button>
+        <button class="home-button" onclick="home()">Home</button>
+    </div>
+    <div class="main">
+        <div class="image-main">
+            <img src="./img/11.jpeg">
+        </div>
+        <div class="content">
+            <h1><strong>ปลาแดกบองสมุนไพร (ขอนแก่น)</strong></h1>
+            <p class="pp1">
+                <strong>ปลาแดกบองสมุนไพร</strong> ปลาแดงบองสมุนไพร หรือ ปลาแดกบอง หรือ ปลาร้าบอง หรือ ปลาร้าบองสมุนไพร  ได้รับคัดเลือกให้เป็นอาหารประจำจังหวัดขอนแก่น หรืออาหารประจำถิ่น ตามการดำเนินการจัดกิจกรรม “1 จังหวัด 1 เมนู เชิดชูอาหารถิ่น” ภายใต้โครงการการส่งเสริม และพัฒนายกระดับอาหารถิ่น สู่มรดกทางวัฒนธรรมและอัตลักษณ์ความเป็นไทย (Thailand Best Local Food) “รสชาติ…ที่หายไป The Lost Taste” ประจำปีงบประมาณ พ.ศ. 2566 ตามประกาศของกรมส่งเสริมวัฒนธรรม เมื่อวันที่ 29 สิงหาคม 2566
+            <p class="pp2">
+                <strong>ส่วนผสม : </strong>ปลาร้าสับ 500 กรัม, ข่าแก่ 80 กรัม, ตะไคร้ 3 หัว, หอมแดงหั่น (หอมแขก) 3 หัว, กระเทียม 20 กลีบ, น้ำมะขามเปียก 2 ช้อนโต๊ะ, พริกป่น 8 ช้อนโต๊ะ, น้ำปลา 1 ช้อนโต๊ะ, ผงปรุงรส 3 ช้อนชา, ใบมะกรูด 20 ใบ (หั่นฝอย), น้ำมันพืช 3 ช้อนโต๊ะ (สำหรับผัด)
+            </p>
+            <p class="pp3">
+                <strong>วิธีทำ : </strong>นำตะไคร้และข่าแก่มาโขลกรวมกันให้ละเอียด จากนั้นใส่หอมแดงหั่น, กระเทียม, น้ำมะขามเปียก, พริกป่น, ใบมะกรูด, ผงปรุงรส และน้ำปลา ลงไปโขลกรวมกันให้เข้ากันดี
+                ตั้งกระทะแล้วใส่น้ำมันพืชลงไป ใช้ไฟกลาง ใส่ส่วนผสมที่โขลกไว้ลงไปผัดจนสุก ระหว่างผัดให้หมั่นคนส่วนผสมให้ไม่ไหม้
+                เมื่อผัดจนส่วนผสมสุกแล้ว ตักใส่จานพร้อมเสิร์ฟ รับประทานกับผักสดต่างๆ ตามชอบ
+            </p>
+        </div>
+    </div>
+    <script>
+        function back() {
+            window.location.href = 'menu.html';
+        }
+
+        function home() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

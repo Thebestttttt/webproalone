@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu14</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFE4D9;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-button, .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7C5127;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .home-button:hover, .back-button:hover {
+            background-color: #9A663A;
+            transform: scale(1.05);
+        }
+
+        .main {
+            width: 80%;
+            height: auto;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-main img {
+            width: 250px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #F8F8F8;
+            border-radius: 8px;
+            border: 1px solid #CCC;
+            margin: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            line-height: 1.6;
+            height: auto;
+        }
+
+        .pp1 {
+            text-indent: 10%;
+            margin-bottom: 15px;
+        }
+        .pp2, .pp3 {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="back-button" onclick="back()">Back</button>
+        <button class="home-button" onclick="home()">Home</button>
+    </div>
+    <div class="main">
+        <div class="image-main">
+            <img src="./img/14.jpeg">
+        </div>
+        <div class="content">
+            <h1><strong>ข้าวปุ้นน้ำยาปลาหลด (ร้อยเอ็ด)</strong></h1>
+            <p class="pp1">
+                <strong>ข้าวปุ้นน้ำยาปลาหลด</strong> ข้าวปุ้นน้ำยาปลาหลด ได้รับคัดเลือกให้เป็นอาหารประจำจังหวัดร้อยเอ็ด หรืออาหารประจำถิ่น ตามการดำเนินการจัดกิจกรรม “1 จังหวัด 1 เมนู เชิดชูอาหารถิ่น” ภายใต้โครงการการส่งเสริม และพัฒนายกระดับอาหารถิ่น สู่มรดกทางวัฒนธรรมและอัตลักษณ์ความเป็นไทย (Thailand Best Local Food) “รสชาติ…ที่หายไป The Lost Taste” ประจำปีงบประมาณ พ.ศ. 2566 ตามประกาศของกรมส่งเสริมวัฒนธรรม เมื่อวันที่ 29 สิงหาคม 2566
+                ปลาหลด ถือว่าเป็นปลาที่พบในหลายพื้นที่ อีสานพบมากในจังหวัดร้อยเอ็ด ลักษณะที่โดดเด่นของปลาหลดคือ เป็นปลาที่มีความอดทนสูง อาศัยในโคลนตมได้นาน
+            </p>
+            <p class="pp2">
+                <strong>ส่วนผสม : </strong> สำหรับน้ำยาปลาหลด:
+                ข้าวปุ้น (ขนมจีน), ปลาหลด 1 กิโลกรัม, น้ำกะทิ 1,000 กรัม, น้ำสะอาด 500 มิลลิลิตร, เกลือ 2 ช้อนชา, น้ำปลา 4 ช้อนโต๊ะ
+                เครื่องสำหรับต้มปลา:
+                เกลือ 1 ช้อนชา, ข่า 5 แว่น, ตะไคร้ 2 ต้น, ใบมะกรูด 3 ใบ
+                เครื่องแกงน้ำยาปลาหลด:
+                พริกแห้ง 15 กรัม, ข่า 50 กรัม, ตะไคร้ 70 กรัม, หอมแดง 70 กรัม, กระชาย 70 กรัม, ใบมะกรูด 5 กรัม
+            </p>
+            <p class="pp3">
+                <strong>วิธีทำ : </strong>ต้มปลาด้วยการนำไม่น้ำตั้งไฟให้เดือด ใส่เกลือ ตะไคร้ ข่า และใบมะกรูดลงไป รอน้ำเดือดสักครู่ แล้วใส่ปลาลงไปต้มจนสุก จากนั้นนำเนื้อปลาออกมาแกะแล้วโขลกให้ละเอียด พักไว้ ต่อไปให้ตั้งน้ำให้เดือดแล้วใส่เครื่องน้ำพริกทั้งหมดลงไปต้มประมาณ 5 นาที ตักขึ้นแล้วโขลกเครื่องแกงให้ละเอียด หรือจะใช้การปั่นก็ได้ จากนั้นตั้งหม้อใส่กะทิ 400 มิลลิลิตร รอจนกะทิแตกมันแล้วใส่เครื่องแกงที่โขลกไว้ลงไปผัด เติมกะทิส่วนที่เหลือลงไปและน้ำสะอาดตั้งไฟให้เดือด ใส่เนื้อปลา เกลือ และน้ำปลา ต้มต่อจนกระทั่งน้ำยาเริ่มข้น ชิมรสและจัดข้าวปุ้นใส่จานราดน้ำยาปลาหลดเสิร์ฟพร้อมเครื่องเคียง
+            </p>
+        </div>
+    </div>
+    <script>
+        function back() {
+            window.location.href = 'menu.html';
+        }
+
+        function home() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

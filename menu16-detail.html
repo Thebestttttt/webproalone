@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu16</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFE4D9;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-button, .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7C5127;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .home-button:hover, .back-button:hover {
+            background-color: #9A663A;
+            transform: scale(1.05);
+        }
+
+        .main {
+            width: 80%;
+            height: auto;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-main img {
+            width: 250px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #F8F8F8;
+            border-radius: 8px;
+            border: 1px solid #CCC;
+            margin: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            line-height: 1.6;
+            height: auto;
+        }
+
+        .pp1 {
+            text-indent: 10%;
+            margin-bottom: 15px;
+        }
+        .pp2, .pp3 {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="back-button" onclick="back()">Back</button>
+        <button class="home-button" onclick="home()">Home</button>
+    </div>
+    <div class="main">
+        <div class="image-main">
+            <img src="./img/16.jpeg">
+        </div>
+        <div class="content">
+            <h1><strong>คั่วเนื้อคั่วปลา (ชัยภูมิ)</strong></h1>
+            <p class="pp1">
+                <strong>คั่วเนื้อคั่วปลา</strong> คั่วเนื้อ คั่วปลา ได้รับคัดเลือกให้เป็นอาหารประจำจังหวัดชัยภูมิ หรืออาหารประจำถิ่น ตามการดำเนินการจัดกิจกรรม “1 จังหวัด 1 เมนู เชิดชูอาหารถิ่น” ภายใต้โครงการการส่งเสริม และพัฒนายกระดับอาหารถิ่น สู่มรดกทางวัฒนธรรมและอัตลักษณ์ความเป็นไทย (Thailand Best Local Food) “รสชาติ…ที่หายไป The Lost Taste” ประจำปีงบประมาณ พ.ศ. 2566 ตามประกาศของกรมส่งเสริมวัฒนธรรม เมื่อวันที่ 29 สิงหาคม 2566
+                คั่วเนื้อ คั่วปลา เป็นอาหารพื้นถิ่นของชาวอำเภอคอนสาร จังหวัดชัยภูมิ เป็นการปรุงอาหารและถนอมอาหารให้รับประทานได้หลายวัน ซึ่งส่วนประกอบวัตถุดิบในการทำหลักคือ เนื้อหมู เนื้อปลาหรือเนื้อวัว ตามใจชอบของผู้รับประทาน และใช้สมุนไพรที่มีสรรพคุณเป็นยาในการถนอมอาหารและมีกลิ่นหอมด้วย
+            </p>
+            <p class="pp2">
+                <strong>ส่วนผสม : </strong>เนื้อหมูหรือเนื้อวัว, เนื้อปลา, กระเทียม, หอมแดง, ตะไคร้, ขมิ้น, พริกชี้ฟ้าแดง, กระชาย, ข่า, ใบมะกรูด, เกลือ, ผงปรุงรส, น้ำมัน
+            </p>
+            <p class="pp3">
+                <strong>วิธีทำ : </strong>ทำเครื่องแกงโดยนำหอมแดง กระเทียม ตะไคร้ ข่า พริกชี้ฟ้าแดงแห้ง ขมิ้น กระชาย มาโขลกรวมกันแล้วพักไว้, นำเนื้อวัวมาล้างให้สะอาดแล้วหั่นเป็นชิ้นใหญ่พอประมาณ, จากนั้นนำเนื้อวัวไปย่างไฟอ่อนๆ ให้สุกแล้วนำเนื้อที่ได้มาหั่นเป็นชิ้นเล็กๆ แล้วนำไปผึ่งแดด ถ้าแดดจ้าร้อนแรงใช้เวลาประมาณ 2 ชั่วโมง, จากนั้นนำเนื้อมาโขลกให้ละเอียด (หากเนื้อที่โขลกแห้งมากให้พรมน้ำนิดหน่อยเพื่อจะได้โขลกได้ง่ายเสร็จเร็วพักไว้), เนื้อปลาก็ทำเช่นเดียวกับเนื้อวัว, นำน้ำมันใส่กระทะตั้งไฟ เมื่อน้ำมันร้อนก็นำเนื้อจากข้อ 2 ลงผัดจนหอมได้ที่ (หรือสังเกตตอนผัดจะรู้สึกเบาเวลาคน), จากนั้นชิมรสหากได้รสชาติตามชอบหรือยังไม่ได้ก็สามารถปรุงเพิ่มให้ได้รสชาติที่ต้องการ, ผัดต่อไปจนได้ที่แล้ว ใส่ใบมะกรูดแล้วคนสักครู่ ยกลงจากเตาทิ้งไว้ให้เย็นตักเสิร์ฟพร้อมเครื่องเคียง.
+            </p>
+        </div>
+    </div>
+    <script>
+        function back() {
+            window.location.href = 'menu.html';
+        }
+
+        function home() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>

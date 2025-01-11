@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu9</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #FFE4D9;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .home-button, .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #7C5127;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+            margin: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .home-button:hover, .back-button:hover {
+            background-color: #9A663A;
+            transform: scale(1.05);
+        }
+
+        .main {
+            width: 80%;
+            height: auto;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .image-main {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .image-main img {
+            width: 250px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #F8F8F8;
+            border-radius: 8px;
+            border: 1px solid #CCC;
+            margin: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            line-height: 1.6;
+            height: auto;
+        }
+
+        .pp1 {
+            text-indent: 10%;
+            margin-bottom: 15px;
+        }
+        .pp2, .pp3 {
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button class="back-button" onclick="back()">Back</button>
+        <button class="home-button" onclick="home()">Home</button>
+    </div>
+    <div class="main">
+        <div class="image-main">
+            <img src="./img/9.jpeg">
+        </div>
+        <div class="content">
+            <h1><strong>ข้าวต้มมัดบัวแดง (อุดรธานี)</strong></h1>
+            <p class="pp1">
+                <strong>ข้าวต้มมัดบัวแดง</strong> ชุมชนคุณธรรม บ้านโนนกอก ตำบลหนองนาคำ อำเภอเมือง จังหวัดอุดรธานี คือ ข้าวต้มมัด สูตรอีสานบ้านเรา ใช้ข้าวเหนียว ผสมมะพร้าว น้ำตาล เมล็ดพันธุ์ถั่วเหลือง ถั่วแดง เผือกหรือมัน หั่นเป็นชิ้นเล็ก ๆ ผสมให้เข้ากัน นำมาห่อใส่ลงในใบตอง ใส่ไส้ กล้วยน้ำว้าสุก วางกลีบบัวแดงรอง ห่อให้เป็นชิ้นเล็กพอดีคำ นำไปนึ่งจนสุกพอดี และบัวแดงยังเป็นเอกลักษณ์ของจังหวัดอุดรธานีอีกด้วย
+                กลีบบัวแดง แม้จะไม่ออกรส หรือให้กลิ่นมากนัก แต่มีสรรพคุณทางยา ช่วยบำรุงสมอง เป็นยาอายุวัฒนะ ช่วยต้านอนุมูลอิสระ ต้านการอักเสบ ปกป้องสมอง ฟื้นฟูความจำ ลดฮอร์โมนความเครียดในสมอง ส่วนฮิปโปแคมปัส เปลี่ยนความจำระยะสั้นเป็นความจำระยะยาว
+            </p>
+            <p class="pp2">
+                <strong>ส่วนผสม : </strong>ข้าวสาร (ข้าวเหนียว) 400 กรัม, กลีบบัวแดง 200 กรัม, ถั่วลิสง 200 กรัม, มันม่วง 200 กรัม, เผือก 200 กรัม, กล้วย 200 กรัม, ถั่วเหลือง 200 กรัม, ถั่วแดง 200 กรัม, มะพร้าวอ่อนขูด 200 กรัม, มันแครอท 200 กรัม, น้ำตาล 100 กรัม, เกลือ 1 ช้อนชา, ใบตอง
+            </p>
+            <p class="pp3">
+                <strong>วิธีทำ : </strong>นำข้าวสาร, ถั่วลิสง, มันม่วงหั่น, เผือกหั่น, ถั่วเหลือง, ถั่วแดง, มะพร้าวขูด, แครอทหั่น, น้ำตาล, และเกลือ มาคลุกเคล้าให้เข้ากันจนส่วนผสมทุกอย่างรวมกันอย่างดี จากนั้นหั่นกล้วยและกลีบบัวแดงเป็นชิ้นพอดีคำ  
+
+                เตรียมใบตองโดยตัดบริเวณหัวและท้ายให้ได้ทรงกลมเล็กน้อย วางกลีบบัวแดงลงบนใบตอง ตามด้วยกล้วยที่หั่นไว้ จากนั้นตักส่วนผสมที่เตรียมไว้แล้วใส่ทับลงไป ทำการม้วนพับห่อใบตองให้แน่น  
+                
+                นำข้าวต้มมัดที่ห่อเสร็จแล้วไปใส่ในภาชนะและนึ่งด้วยไฟแรงตลอด ใช้เวลานึ่งประมาณ 15-30 นาที เมื่อครบเวลาแล้วนำขึ้นมาพักให้เย็นก่อนเสิร์ฟ
+            </p>
+        </div>
+    </div>
+    <script>
+        function back() {
+            window.location.href = 'menu.html';
+        }
+
+        function home() {
+            window.location.href = 'index.html';
+        }
+    </script>
+</body>
+</html>
